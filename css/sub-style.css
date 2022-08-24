@@ -32,12 +32,11 @@ header {
   top: 25px;
 }
 .sidebar {
-  max-width: 350px;
+  max-width: 325px;
   padding-top: 0;
   padding-bottom: 30px;
   padding-left: 100px;
-  padding-right: 100px;
-  left: 100px;
+  padding-right: 100px;  
 }
 
 .Main {
@@ -193,8 +192,22 @@ header {
   justify-self: center;
   grid-gap: 5px;
 }
+
 .grid-box img {
   width: 100%;
+}
+.grid-box {
+  width: 33.333%;
+  padding: 10px;
+  max-width: 300px;
+}
+.grid-final-image {
+  width: 100% !important;
+}
+.colna-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -205,13 +218,11 @@ header {
 
 @media only screen and (max-width: 900px) {
   .about {
-    margin-left: 20%;
+    padding: 20px;
   }
   .sidebar {
-    width: 400px;
-    margin-left: 20%;
-    padding-left: 0;
-    padding-right: 0;
+    width: 200px;
+    margin: auto;
     padding: 30px;
   }
   .youtube-video-container {
@@ -222,10 +233,12 @@ header {
     padding: 0%;
   }
   .Main {
-    margin-right: 0;
-    margin-top: 15px;
+    margin: auto;
   }
-
+  .grid-box {
+    width: 50%;
+    padding: 10px;
+  }
   .lines {
     margin-top: 0%;
     margin-bottom: 0%;
@@ -249,10 +262,7 @@ header {
   }
   .parent {
     grid-template-columns: repeat(1, 1fr);
-  }
-  .Main {
-    padding: 0 15px;
-  }
+  }  
   .span3 {
     padding-top: 10px;
   }
@@ -267,17 +277,8 @@ header {
   .card {
     grid-column-end: span 6;
   }
-  .sidebar {
-    width: 300px;
-    margin-left: 15%;
-  }
 }
-@media only screen and (max-width: 400px) {
-  .sidebar {
-    width: 300px;
-    margin-left: 10%;
-  }
-}
+
 
 a {
   text-decoration: none;
